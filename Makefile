@@ -11,7 +11,7 @@ ${NAME}:
 	cd includes/libft/ && make && cd ../..
 	${CC} ${CFLAGS} ${SRC} -pthread -o ${NAME}
 clean:
-	${RM} /includes/libft/*.o
+	${RM} includes/libft/*.o
 fclean:clean
 	${RM} ${NAME} includes/libft/libft.a
 re: fclean ALL
